@@ -1,5 +1,6 @@
 {
 	"name": "smart-shopping-list-next",
+	"homepage": "https://fuentesnina.github.io/tcl-53-smart-shopping-list/",
 	"private": false,
 	"engines": {
 		"node": ">=18.12.0",
@@ -40,6 +41,8 @@
 		"vitest": "^0.25.8"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "vite",
 		"build": "vite build",
 		"test": "vitest",
